@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let x="I am sneha"
+        document.write("The string is :",x +"<br>");
+        document.write("The length of the string is :",x.length +"<br>");
+        document.write("The character at third position is :",x.charAt(2) +"<br>") ;
+        document.write("The character at fifth position is :",x.at(5) +"<br>");
+        document.write ("Uppercase is :",x.toUpperCase()+"<br>");
+        document.write("Lowercase is :",x.toLowerCase());
+
+        let a="Happy";
+        let b="New";
+        let c="Year";
+        a=a.concat(" ",b);
+        a=a.concat(" ",c);
+        document.write("<br> Message :",a +"<br>");
+        document.write(b.repeat(3) +"<br>");  //to repeat
+
+        // slice function : string.slice(from which index ,the number give here take the frond number of the write num)
+        let n="I like icecream and the flavor is butter scotch"
+        document.write(" The message :",n +"<br>");
+        document.write(n.slice(7,16) +"<br>");
+
+        // replace function .here every place of like present is changed to we suggested value  the 
+            document.write(n.replace(/like/g,"don't like") +"<br>");
+
+        // Search function search a particular word in position
+            document.write(n.search(/like/g) +"<br>");
+            document.write(n.search(/icecream/g));
+
+        // split here when we run it then answer is :https://www,kba ,here https://www is  1st element and kba other element
+            let w="https://www.kba";
+            let q=w.split(".")
+            document.write("<br> Splits :",q)
+    </script>
+</body>
+</html>

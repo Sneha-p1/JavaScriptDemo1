@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>JavaScript</h2>
+    
+    <script>
+        // Arithmetic Operators
+        let w=6;
+        let r=8;
+          a=w+r;
+        document.write(" w=6, r=8 ; w+r =",a +"<br>")
+        let s=6;
+        document.write("s=6 ; Preincrement : Before increment = "+s+ "&nbsp;&nbsp; After increment ="+(++s) +"<br>" )
+
+        let e=6;
+        document.write("e=6 ; Postincrement : Before increment = "+e+ "&nbsp;&nbsp; After increment ="+(e++) +"<br>" )
+ 
+         let f=5,g=6;
+         document.write(`<br><br>Before Increment values of F =${f} &nbsp&nbsp G =${g}`);
+         h=++f;
+         i=g++;
+         document.write("<br><br> Preincrement operation :",h)
+         document.write("<br><br> Postincrement operation :",i +"<br><br>")
+
+
+        // Assignment operators
+        let b=5;
+        let c=6;
+         b+=c
+         document.write("b=5, c=6 ; b+=c =",b +"<br>")
+
+        //  Comparison operators
+        let x=5;
+        let y=10;
+        z=x<y;
+        document.write("x=5, y=10 ; Is x less than y :",z +"<br>")
+
+        // logical operator
+
+        let j=4,k=7,l=9;
+        m=(j<k)&&(k<l) //here two conditions are true then answer is true
+        n=(j<k)||(k>l) //if one condition is true other one is true or false answer is true 
+        document.write("<br><br> Logical Operation (&&) : ",m)
+        document.write("<br><br> Logical Operation (||) : ",n)
+        
+        // Bitwise Operator
+
+        let o=5;
+        let p=1;
+        Q=o&p;
+        Y=o|p;
+        document.write("<br><br> Bitwise operator AND :",Q)
+        document.write("<br><br> Bitwise operator OR :",Y +"<br><br>")
+    </script>
+
+         <!-- Ternary operator -->
+    <p id="num"></p>
+    <p id="num1"></p>
+    <script>
+        let age=document.getElementById("num").innerHTML=17;
+        let vote=(age<18)?"Not Eligible" : "Eligible" ;
+        document.write("Age = 17 : &nbsp" ,vote,"&nbsp to Vote" +"<br><br>")
+
+        let age2=document.getElementById("num1").innerHTML=25;
+        let vote2=(age2<18)?"Not Eligible" : "Eligible" ;
+        document.write("Age = 25 : &nbsp" ,vote2,"&nbsp to Vote" )
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Fibonacci Series</h2>
+    <P id="demo"></P>
+    <P id="demo1"></P>
+    <script>
+        let a=0;
+        let b=1;
+        let c=a+b;
+        document.getElementById("demo").innerHTML="Series =<br>" +a+"<br> <br>" +b+"<br><br>" +c 
+            a=c;
+            b=a+b;
+            c=a+b;
+        document.getElementById("demo1").innerHTML=+b +"<br><br>" +c
+    </script>
+</body>
+</html> 
